@@ -1,0 +1,145 @@
+{
+  "name": "bbox api cloud function call",
+  "intents": [
+    {
+      "intent": "callbboxapi",
+      "examples": [
+        {
+          "text": "appel de l'api bbox"
+        },
+        {
+          "text": "appelle l'api box"
+        }
+      ]
+    },
+    {
+      "intent": "gettoken",
+      "examples": [
+        {
+          "text": "recupere un token"
+        }
+      ]
+    }
+  ],
+  "entities": [],
+  "language": "fr",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "response display",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Liste des chaines : $channel_list"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bienvenue",
+      "metadata": {},
+      "dialog_node": "node_2_1549447162919",
+      "previous_sibling": "node_1_1549447136992"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "Bienvenue",
+      "actions": [
+        {
+          "name": "BboxLab_Google Assistant V2/bbox api/get channel list",
+          "type": "server",
+          "credentials": "$my_credentials",
+          "result_variable": "$channel_list"
+        }
+      ],
+      "context": {
+        "greeting": "",
+        "my_credentials": {
+          "user": "2c64422d-11c8-4e14-a15e-f54339a5dafa",
+          "password": "RsaDFlDgafhWhr8alirEVpDjpAsx79uQeMVLpJCyaq3dzSdOCN9fMG5nqF0oHhNQ"
+        }
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1549447162919"
+      },
+      "conditions": "#callbboxapi",
+      "dialog_node": "node_1_1549447136992"
+    },
+    {
+      "type": "standard",
+      "title": "Tout le reste",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Je n'ai pas compris. Vous pouvez essayer de reformuler."
+              },
+              {
+                "text": "Pouvez-vous dire cela autrement ? Je ne comprends pas."
+              },
+              {
+                "text": "Je n'ai pas compris ce que vous voulez dire."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Tout le reste",
+      "previous_sibling": "Bienvenue"
+    },
+    {
+      "type": "standard",
+      "title": "Bienvenue",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bonjour, comment puis-je vous aider ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Bienvenue"
+    }
+  ],
+  "workspace_id": "eaaf496b-36be-4242-bd30-e2e31cd480de",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
