@@ -10,4 +10,4 @@ box from watson assistant using an IBM Cloud Function to make a request to the B
 * The example IBM cloud function	to be executed.
 
 The output :
-![](result.jpg?raw=true)
+![](result.png?raw=true)
