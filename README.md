@@ -14,17 +14,21 @@ The output :
 ![](result.png?raw=true)
 
 ## Security Requirements:
-In order to make the call to the IBM Cloud Function you first need to retreive an API key corresponding to your IBM cloud function action.
-You can find this key in your account at the following url : https://console.bluemix.net/openwhisk/learn/api-key
-The page with the API key looks like this:
+In order to make the call to the IBM Cloud Function you must first retreive an API key corresponding to your IBM cloud function/action.
+You can find this key in your account at the following url :
 
+https://console.bluemix.net/openwhisk/learn/api-key
 ![](api_key_page.png?raw=true)
 
-Once you have this key, you need to use the first part of it (the part before the colon) as your user and the second part of it (after the colon) as the password. Use these credentials to identify your Watson assistant Skill to your IBM Cloud Function when you request it in a node of your conversation.
-You must use a variable to hold the credentials in the JSON editor of a node of your assistant skill
-For example, the JSON in our assistant node is as follows:
+Once you have your API key, you shave to use the first part of it (the part before the colon) as your user and the second part of it (after the colon) as your password.
+
+Use these credentials to identify your Watson assistant Skill to your IBM Cloud Function when you request it in a node of your conversation.
+
+* Use a variable called $my_credentials to hold the credentials in your watson assistant.
+* The output of the assistant node will be displayed before the function is executed so dont output anything untill you make a jump to the next node.
+* You must specify the full path of your ibm cloud function in a variable called name in the action section of your JSON editor. (the IBM space name(here 'Bboxlab_Google Assisant V2'), the package name (create it and name it as you want, here 'bbox api') and the Cloud function/ Action name (here 'get channel list')
+
+
+As an example, the JSON you create can look like the following :
+
 ![](node-json.png?raw=true)
-
-The output of the assistant node will be displayed before the function is executed so dont output anything untill you make a jump to the next node.
-
-You must specify the full path of your ibm cloud function. That is the space (here Bboxlab_Google Assisant V2), the package name (create it and name it as you want, here it is bbox api) and the Cloud function/ Action name (here 'get channel list')
