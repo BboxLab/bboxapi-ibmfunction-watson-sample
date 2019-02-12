@@ -14,7 +14,7 @@ The output :
 ![](result.png?raw=true)
 
 ## Security Requirements:
-In order to make the call to the IBM Cloud Function you must first retreive an API key corresponding to your IBM cloud function/action.
+In order to make the call to the IBM Cloud Function you must first retrieve an API key corresponding to your IBM cloud function/action.
 You can find this key in your account at the following url :
 
 https://console.bluemix.net/openwhisk/learn/api-key
@@ -32,5 +32,8 @@ Use these credentials to identify your Watson assistant Skill to your IBM Cloud 
 As an example, the JSON you create can look like the following :
 
 ![](node-json.png?raw=true)
+
+In order to make the call to th BBox API you need to ask for an APP_key and APP_secret at the following url :
+https://dev.bouyguestelecom.fr/nous-contacter/
 
 <img src="bluemix.png" width="150"/> <img src="ibmcf.png"  padding-left="50px" width="150"/> <img src="watsonassistant.png" padding-left="50px" width="150"/>
