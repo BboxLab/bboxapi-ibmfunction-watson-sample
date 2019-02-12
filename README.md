@@ -33,6 +33,8 @@ As an example, the JSON you create can look like the following :
 
 ![](node-json.png?raw=true)
 
+<img src="bluemix.png" width="100"/>
+
 ![](bluemix.png =100x)
 
 ![](watsonassistant.png?raw=true =100x20)
