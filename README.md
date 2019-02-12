@@ -33,4 +33,4 @@ As an example, the JSON you create can look like the following :
 
 ![](node-json.png?raw=true)
 
-<img src="bluemix.png" width="100"/> <img src="watsonassistant.png" width="100" float="left"/> <img src="ibmcf.png" width="100" float="left"/>
+<img src="bluemix.png" width="150"/> <img src="ibmcf.png" width="150"/> <img src="watsonassistant.png" width="150"/>
