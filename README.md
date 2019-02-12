@@ -33,7 +33,7 @@ As an example, the JSON you create can look like the following :
 
 ![](node-json.png?raw=true)
 
-In order to make the call to th BBox API you need to ask for an APP_key and APP_secret at the following url :
+In order to make the call to th BBox API you need to ask for an appId and appSecret at the following url :
 https://dev.bouyguestelecom.fr/nous-contacter/
 
 <img src="bluemix.png" width="150"/> <img src="ibmcf.png"  padding-left="50px" width="150"/> <img src="watsonassistant.png" padding-left="50px" width="150"/>

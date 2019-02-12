@@ -13,8 +13,8 @@ const request = require('request-promise');
 function main(params) {
 
     var postData = {
-          appId: "***Add your app nid here ***",
-          appSecret: "*** Add your app secret her ***"
+          appId: "*** Add your appId here ***",
+          appSecret: "*** Add your appSecret here ***"
     };
 
     var options = {
