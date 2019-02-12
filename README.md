@@ -35,8 +35,6 @@ As an example, the JSON you create can look like the following :
 
 <img src="bluemix.png" width="100"/>
 
-![](bluemix.png =100x)
+<img src="watsonassistant.png" width="100"/>
 
-![](watsonassistant.png?raw=true =100x20)
-
-![](ibmcf.png?raw=true =100x20)
+<img src="ibmcf.png" width="100"/>
