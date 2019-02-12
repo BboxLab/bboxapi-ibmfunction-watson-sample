@@ -31,11 +31,12 @@ Use these credentials to make the call to the IBM Cloud function from any conver
 
 # In order to make a call to the ibm cloud function, you should format your JSON as follows :
 
+The output of the assistant conversation node will be displayed before the function is executed so dont output anything in this node. Use a jump to the next node before.
+
 Inside an action object :
 
 * Use a variable called $my_credentials to hold the credentials in your watson assistant.
-* The output of the assistant conversation node will be displayed before the function is executed so dont output anything untill you make a jump to the next node.
-* You must specify the full path of your ibm cloud function in a variable called "name" in the action section of your JSON editor. (the IBM space name( here 'Bboxlab_Google Assisant V2'), the package name (create it and name it as you want, here 'bbox api') and the Cloud function/ Action name (here 'get channel list')
+* Use a variable called "name" to specify the full path of your ibm cloud function. (the IBM space name( here 'Bboxlab_Google Assisant V2'), the package name (create it and name it as you want, here it is 'bbox api') and the Cloud function/ Action name (here 'get channel list')
 
 As an example, the JSON you create can look like the following :
 
