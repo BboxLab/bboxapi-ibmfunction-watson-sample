@@ -33,8 +33,4 @@ As an example, the JSON you create can look like the following :
 
 ![](node-json.png?raw=true)
 
-![](bluemix.png?raw=true)
-
-![](watsonassistant.png?raw=true)
-
-![](ibmcf.png?raw=true)
+!
