@@ -32,3 +32,9 @@ Use these credentials to identify your Watson assistant Skill to your IBM Cloud 
 As an example, the JSON you create can look like the following :
 
 ![](node-json.png?raw=true)
+
+![](bluemix.png?raw=true)
+
+![](watsonassistant.png?raw=true)
+
+![](ibmcf.png?raw=true)
