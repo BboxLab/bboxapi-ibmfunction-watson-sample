@@ -20,7 +20,7 @@ In order to make requests to the BBox API you need to ask for an appId and appSe
 https://dev.bouyguestelecom.fr/nous-contacter/
 Add these credentials to the ready made Cloud Function.
 
-In order to make the call to the IBM Cloud Function from Waton Assistant you must first retrieve an API key corresponding to your IBM cloud function which you can find at the following Url address:
+In order to make the call to the IBM Cloud Function from Waton Assistant you must first retrieve an API key corresponding to your IBM cloud function which you can find at the following Url address :
 
 https://console.bluemix.net/openwhisk/learn/api-key
 ![](api_key_page.png?raw=true)
@@ -36,7 +36,9 @@ The output of the assistant conversation node will be displayed before the funct
 Inside an action object :
 
 * Use a variable called $my_credentials to hold the credentials in your watson assistant.
-* Use a variable called "name" to specify the full path of your ibm cloud function. (the IBM space name( here 'Bboxlab_Google Assisant V2'), the package name (create it and name it as you want, here it is 'bbox api') and the Cloud function/ Action name (here 'get channel list')
+* Use a variable called "name" to specify the full path of your ibm cloud function. (the IBM space name( here 'Bboxlab_Google Assisant V2'), the package name (create it and name it as you want, here it is 'bbox api') and the Cloud function/ Action name (here 'get channel list').
+* A variable type needs a value of "server".
+* A variable called "result_variable" needs to be set in order to store the function result.
 
 As an example, the JSON you create can look like the following :
 
